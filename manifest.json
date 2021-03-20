@@ -1,0 +1,15 @@
+{
+  "name": "safe twitter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": [
+        "src/follow_list.js", 
+        "src/delete_non_follow.js",
+        "src/delete_sidebar.js"
+      ]
+    }
+  ]
+}
